@@ -1,22 +1,17 @@
 import React from "react";
-import First from "./comp/First";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
-
+import ToastNotification from "./comp/ToastNotification";
+import Modall from "./comp/Modal";
+import TollTip from "./comp/TollTip";
 function App() {
   return (
-    <Div>
-      <div className=" col-8 mx-auto jumbotron bg-warning ">
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={First} />
-          </Switch>
-        </BrowserRouter>
-      </div>
-    </Div>
+    <div>
+      <ToastNotification />
+      <Modall />
+      <TollTip />
+    </div>
   );
 }
-const Div = styled.div`
-  margin: 100px auto;
-`;
+const Div = styled.div``;
 export default App;
