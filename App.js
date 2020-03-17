@@ -5,10 +5,11 @@ import ToastNotification from "./comp/ToastNotification";
 import Modall from "./comp/Modal";
 import TollTip from "./comp/TollTip";
 import CountUp from "./comp/CountUp";
+import ColorPicker from "./comp/ColorPicker";
 function App() {
   return (
     <div>
-      <CountUp />
+      <ColorPicker />
       <ToastNotification />
       <Modall />
       <TollTip />
